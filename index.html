@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container" style="display: none;">
+        <table id = "gameContainer">
+
+        </table>
+        <div id = "buttonContainer"><button class = "buzzer" id = "buzzer" type="button">fusszer</button> <div id = "timer">Hátralévő idő</div></div>
+        
+        <div id = "csapatok">
+            <div id = team1cucc>
+                1. csapat <br>
+                pontok: <div id = "team1Points" class = "TeamView"></div> 
+                tagok: <div id = "team1Players" class = "TeamView"></div>
+            </div>
+            <div id = team2cucc>
+                2. csapat <br>
+                pontok: <div id = "team2Points" class = "TeamView"></div> 
+                tagok: <div id = "team2Players" class = "TeamView"></div>
+            </div>
+            <div id = team3cucc>
+                3. csapat <br>
+                pontok: <div id = "team3Points" class = "TeamView"></div> 
+                tagok: <div id = "team3Players" class = "TeamView"></div>
+            </div>
+            <div id = team4cucc>
+                4. csapat <br>
+                pontok: <div id = "team4Points" class = "TeamView"></div> 
+                tagok: <div id = "team4Players" class = "TeamView"></div>
+            </div>
+            <div id = team5cucc>
+                5. csapat <br>
+                pontok: <div id = "team5Points" class = "TeamView"></div>
+                tagok: <div id = "team5Players" class = "TeamView">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "login">
+        Név: <input id = "nameInput">
+        <div id = "csapatok">
+            <div>
+                1. csapat <br>
+                <button class = "joinTeam" id = "team1">Csatlakozás</button>
+            </div>
+            <div>
+                2. csapat <br>
+                <button class = "joinTeam" id = "team2">Csatlakozás</button>
+            </div>
+            <div>
+                3. csapat <br>
+                <button class = "joinTeam" id = "team3">Csatlakozás</button>
+            </div>
+            <div>
+                4. csapat <br>
+                <button class = "joinTeam" id = "team4">Csatlakozás</button>
+            </div>
+            <div>
+                5. csapat <br>
+                <button class = "joinTeam" id = "team5">Csatlakozás</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
