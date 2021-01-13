@@ -137,6 +137,7 @@ onclick = (ev) => {
                     },
                     body: JSON.stringify({"name": name, "team": team})
                 })
+                alert("yeet, " + name)
                 document.getElementById("login").style.display = "none"
                 document.getElementById("container").style.display = "block"
                 refreshState()
