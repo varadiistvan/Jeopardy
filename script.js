@@ -17,7 +17,7 @@ var refreshState = async () => {
         if(JSON.stringify(state) !== JSON.stringify(newState)) {
             console.log("board changed")
             state = newState
-            renderBoard(state[0], state.slice(1, state.length - 1))
+            renderBoard(state[0], state.slice(1, state.length))
         }
         else {
             console.log("no change on board")
