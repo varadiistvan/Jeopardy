@@ -101,14 +101,16 @@ onclick = (ev) => {
     console.log(ev);
     switch(ev.target.className){
         case "unclaimed":
-            fetch("https://bioszjeopardy.herokuapp.com/choosenext", {
-                method: "PUT",
-                mode: "cors",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({"team": team, "name": name, target: ev.target.id})
-            })
+            if(confirm("Biztos ezt választod?")) {
+                fetch("https://bioszjeopardy.herokuapp.com/choosenext", {
+                    method: "PUT",
+                    mode: "cors",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({"team": team, "name": name, target: ev.target.id})
+                })
+            }
             break
         
         case "claimed":
@@ -123,6 +125,7 @@ onclick = (ev) => {
             fetch(`https://bioszjeopardy.herokuapp.com/buzzedin?team=${team}&name=${name}&time=${Date.now()}`, {
                 mode: "no-cors"
             })
+            alert("Bringgggg")
             break
 
         case "joinTeam":
