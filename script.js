@@ -44,7 +44,7 @@ var refreshState = async () => {
             console.log("no change in teams");
         }
 
-        document.getElementById("timer").innerText = res.timeStamp
+        document.getElementById("timer").innerText = res.timeStamp || 0
     })
 }
 
